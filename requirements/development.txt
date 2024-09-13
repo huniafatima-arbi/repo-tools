@@ -71,10 +71,6 @@ distlib==0.3.8
     # via
     #   -r requirements/base.txt
     #   virtualenv
-docutils==0.21.2
-    # via
-    #   -r requirements/base.txt
-    #   statistics
 edx-lint==5.3.7
     # via -r requirements/development.in
 execnet==2.1.1
@@ -232,8 +228,6 @@ smmap==5.0.1
     # via
     #   -r requirements/base.txt
     #   gitdb
-statistics==1.0.3.5
-    # via -r requirements/base.txt
 stevedore==5.2.0
     # via code-annotations
 text-unidecode==1.3

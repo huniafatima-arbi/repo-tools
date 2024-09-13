@@ -37,8 +37,6 @@ cryptography==43.0.0
     # via pyjwt
 distlib==0.3.8
     # via virtualenv
-docutils==0.21.2
-    # via statistics
 execnet==2.1.1
     # via pytest-xdist
 filelock==3.15.4
@@ -117,8 +115,6 @@ six==1.16.0
     # via python-dateutil
 smmap==5.0.1
     # via gitdb
-statistics==1.0.3.5
-    # via -r requirements/base.in
 tox==4.16.0
     # via -r requirements/base.in
 tqdm==4.66.4
