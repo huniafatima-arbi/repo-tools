@@ -18,7 +18,6 @@ path.py
 python-dateutil
 python-dotenv
 requests
-statistics
 tqdm
 uritemplate
 urlobject

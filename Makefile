@@ -30,13 +30,13 @@ $(COMMON_CONSTRAINTS_TXT):
 upgrade: export CUSTOM_COMPILE_COMMAND=make upgrade
 upgrade: $(COMMON_CONSTRAINTS_TXT)  ## update the requirements/*.txt files with the latest packages satisfying requirements/*.in
 	pip install -qr requirements/pip-tools.txt
-	pip-compile --upgrade --allow-unsafe --rebuild -o requirements/pip.txt requirements/pip.in
-	pip-compile --upgrade -o requirements/pip-tools.txt requirements/pip-tools.in
+	pip-compile --allow-unsafe --rebuild -o requirements/pip.txt requirements/pip.in
+	pip-compile -o requirements/pip-tools.txt requirements/pip-tools.in
 	pip install -qr requirements/pip.txt
 	pip install -qr requirements/pip-tools.txt
-	pip-compile --upgrade -o requirements/base.txt requirements/base.in
-	pip-compile --upgrade -o requirements/development.txt requirements/development.in
-	for fextra in edx_repo_tools/*/extra.in; do pip-compile --upgrade -o $${fextra%.in}.txt $$fextra; done
+	pip-compile -o requirements/base.txt requirements/base.in
+	pip-compile -o requirements/development.txt requirements/development.in
+	for fextra in edx_repo_tools/*/extra.in; do pip-compile -o $${fextra%.in}.txt $$fextra; done
 
 lint:				## run pylint
 	pylint *.py edx_repo_tools tests
