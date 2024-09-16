@@ -125,8 +125,6 @@ uritemplate==4.1.1
     #   github3-py
 urllib3==2.2.3
     # via requests
-urlobject==2.4.3
-    # via -r requirements/base.in
 virtualenv==20.26.4
     # via tox
 volatile==2.1.0
