@@ -21,7 +21,6 @@ requests
 tqdm
 uritemplate
 ruamel.yaml
-bowler
 
 # pytest is used by `edx_report_tools.oep2` directly
 pytest

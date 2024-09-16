@@ -5,20 +5,12 @@
 #    make upgrade
 #
 appdirs==1.4.4
-    # via
-    #   -r requirements/base.txt
-    #   fissix
+    # via -r requirements/base.txt
 astroid==3.2.4
     # via
     #   pylint
     #   pylint-celery
-attrs==24.2.0
-    # via
-    #   -r requirements/base.txt
-    #   bowler
 backports-csv==1.0.7
-    # via -r requirements/base.txt
-bowler==0.9.0
     # via -r requirements/base.txt
 build==1.2.2
     # via pip-tools
@@ -47,11 +39,9 @@ charset-normalizer==3.3.2
 click==8.1.7
     # via
     #   -r requirements/base.txt
-    #   bowler
     #   click-log
     #   code-annotations
     #   edx-lint
-    #   moreorless
     #   pip-tools
 click-log==0.4.0
     # via edx-lint
@@ -82,10 +72,6 @@ filelock==3.16.0
     #   -r requirements/base.txt
     #   tox
     #   virtualenv
-fissix==24.4.24
-    # via
-    #   -r requirements/base.txt
-    #   bowler
 gitdb==4.0.11
     # via
     #   -r requirements/base.txt
@@ -116,10 +102,6 @@ mccabe==0.7.0
     # via pylint
 more-itertools==10.5.0
     # via -r requirements/base.txt
-moreorless==0.4.0
-    # via
-    #   -r requirements/base.txt
-    #   bowler
 msgpack==1.1.0
     # via
     #   -r requirements/base.txt
@@ -251,10 +233,6 @@ virtualenv==20.26.4
     # via
     #   -r requirements/base.txt
     #   tox
-volatile==2.1.0
-    # via
-    #   -r requirements/base.txt
-    #   bowler
 wheel==0.44.0
     # via pip-tools
 
